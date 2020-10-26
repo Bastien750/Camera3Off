@@ -3,3 +3,14 @@
   justify-content: space-between;
   margin: 1.5em;
 }
+
+.credit {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}

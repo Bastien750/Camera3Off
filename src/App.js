@@ -3,12 +3,15 @@ import "./App.css";
 
 // Components
 import Header from "./components/Header";
+import Diaporama from "./components/Diaporama";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Header />
-      <p>Test</p>
+      <Diaporama />
+      <Footer />
     </div>
   );
 }
