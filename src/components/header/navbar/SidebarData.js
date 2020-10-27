@@ -2,19 +2,19 @@ import React from "react";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as FiIcons from "react-icons/fi";
-import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
   {
     title: "Accueil",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    icon: <RiIcons.RiHomeLine />,
     cName: "nav-text",
   },
   {
     title: "Albums",
     path: "/albums",
-    icon: <IoIcons.IoMdAlbums />,
+    icon: <RiIcons.RiCheckboxMultipleBlankLine />,
     cName: "nav-text",
   },
   {
@@ -38,7 +38,7 @@ export const SidebarData = [
   {
     title: "À Propos",
     path: "/aboutus",
-    icon: <AiIcons.AiOutlinePlusSquare />,
+    icon: <AiIcons.AiOutlinePlusCircle />,
     cName: "nav-text",
   },
 ];

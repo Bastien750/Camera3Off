@@ -1,8 +1,9 @@
 import React from "react";
+import "./Diaporama.css";
 
 function Diaporama() {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div className="diaporama">
       <p>Test</p>
     </div>
   );

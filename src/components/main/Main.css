@@ -1,0 +1,8 @@
+main {
+  width: 60vw;
+  height: 100vh;
+  box-sizing: border-box;
+  border: 2px solid green;
+  margin: auto;
+  display: flex;
+}
