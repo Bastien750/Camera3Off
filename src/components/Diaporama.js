@@ -2,7 +2,7 @@ import React from "react";
 
 function Diaporama() {
   return (
-    <div>
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <p>Test</p>
     </div>
   );

@@ -10,7 +10,13 @@
 }
 
 footer {
+  position: fixed;
+  bottom: 0px;
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  margin: 1em;
+}
+
+footer .credit {
+  margin: 10px;
 }
