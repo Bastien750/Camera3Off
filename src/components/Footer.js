@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import "./Footer.css";
 
 function Footer() {
   const date = moment().format("dddd DD MMMM YYYY");
