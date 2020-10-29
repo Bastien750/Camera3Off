@@ -3,32 +3,32 @@ import React from "react";
 export const DiaporamaData = [
   {
     order: 1,
-    name: "Picture 1",
-    path: "../picture/1.jpg",
+    name: "1.jpg",
+    albumPath: "/album/france/1.jpg",
     comment: "Ceci est une belle photo",
   },
   {
     order: 2,
-    name: "Picture 1",
-    path: "../picture/2.jpg",
+    name: "2.jpg",
+    albumPath: "../album/name/picture",
     comment: "Ceci est une belle photo",
   },
   {
     order: 3,
-    name: "Picture 1",
-    path: "../picture/3.jpg",
+    name: "3.jpg",
+    albumPath: "../album/name/picture",
     comment: "Ceci est une belle photo",
   },
   {
     order: 4,
-    name: "Picture 1",
-    path: "../picture/4.jpg",
+    name: "1.jpg",
+    albumPath: "../album/name/picture",
     comment: "Ceci est une belle photo",
   },
   {
     order: 5,
-    name: "Picture 1",
-    path: "../picture/5.jpg",
+    name: "3.jpg",
+    albumPath: "../album/name/picture",
     comment: "Ceci est une belle photo",
   },
 ];

@@ -1,5 +1,33 @@
 .diaporama {
   width: 100%;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
+  height: 90%;
   margin: auto;
+  box-sizing: border-box;
+}
+
+.diaporama img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.diaporama a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.diaporama span {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.decoration {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3em;
+  margin: 20px;
 }
