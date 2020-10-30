@@ -1,12 +1,12 @@
 .diaporama {
   width: 100%;
-  /*border: 2px solid red;*/
+  border: 2px solid red;
   height: 90%;
   margin: auto;
   box-sizing: border-box;
 }
 
-.diaporama img {
+/* .diaporama img {
   object-fit: contain;
   width: 100%;
   height: auto;
@@ -30,4 +30,14 @@
   justify-content: space-around;
   font-size: 1.3em;
   margin: 20px;
+} */
+
+.containerSlide {
+  width: 90%;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.containerSlide img {
+  height: 500px;
 }

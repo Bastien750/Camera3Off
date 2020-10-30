@@ -30,26 +30,29 @@ import { Link } from "react-router-dom";
   );
 }*/
 
-const proprieties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-  arrows: true,
-};
-
 function Diaporama() {
+  const proprieties = {
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    indicators: true,
+    arrows: true,
+  };
   return (
-    <div className="containerSlide">
-      <Slide {...proprieties}>
-        {DiaporamaData.map((item) => {
-          <div className="each-slide">
-            <div>
-              <img src={item.name} alt={item.comment} />
-            </div>
-          </div>;
-        })}
-      </Slide>
+    <div className="diaporama">
+      <div className="containerSlide">
+        <Slide {...proprieties}>
+          {DiaporamaData.map((item, index) => {
+            return (
+              <div className="each-slide">
+                <div>
+                  <img src={"/images/" + item.name} alt={item.comment} />
+                </div>
+              </div>
+            );
+          })}
+        </Slide>
+      </div>
     </div>
   );
 }

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "cra-template": "1.1.0",
     "moment": "^2.29.1",
     "react": "^17.0.1",
@@ -10,6 +12,7 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.0",
+    "react-slideshow-image": "^3.3.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
