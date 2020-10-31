@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Diaporama.css";
 import { DiaporamaData } from "./DiaporamaData";
 import { Link } from "react-router-dom";
-import * as AiIcons from "react-icons/ai";
-import * as BsIcons from "react-icons/bs";
+import * as FaIcons from "react-icons/fa";
 
 function Diaporama() {
   const [id, setId] = useState(0);
@@ -39,7 +38,7 @@ function Diaporama() {
               className="slider"
               style={id === index ? { opacity: 1 } : {}}
             >
-              <AiIcons.AiOutlineMinus />
+              <FaIcons.FaRegWindowMinimize />
             </div>
           );
         })}

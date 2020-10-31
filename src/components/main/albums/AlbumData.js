@@ -1,16 +1,16 @@
 import React from "react";
 
-export const DiaporamaData = [
+export const AlbumData = [
   {
     name: "1.jpg",
     comment: "Ceci est une belle photo",
   },
   {
-    name: "1.jpg",
+    name: "2.jpg",
     comment: "Ceci est une belle photo",
   },
   {
-    name: "1.jpg",
+    name: "3.jpg",
     comment: "Ceci est une belle photo",
   },
 ];
