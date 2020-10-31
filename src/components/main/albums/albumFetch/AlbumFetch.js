@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AlbumFetchData } from "./AlbumFetchData";
 import "../Album.css";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function AlbumFetch() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="main">
       <div className="album">
@@ -13,7 +17,7 @@ function AlbumFetch() {
           {AlbumFetchData.byAlbums.map((album, index) => {
             return (
               <Link
-                to={"/byalbum/" + album.id}
+                to={"byalbum/" + album.id}
                 key={index}
                 className="each-album"
               >

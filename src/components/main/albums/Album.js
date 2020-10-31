@@ -11,7 +11,11 @@ function Album() {
       <div className="album-contain">
         {AlbumData.map((album, index) => {
           return (
-            <Link to={"/album/" + album.id} key={index} className="each-album">
+            <Link
+              to={"/album/" + album.id + "/"}
+              key={index}
+              className="each-album"
+            >
               <div
                 className="album-detail"
                 style={{
