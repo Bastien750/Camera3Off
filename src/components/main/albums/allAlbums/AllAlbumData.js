@@ -7,12 +7,12 @@ export const AlbumData = [
     comment: "Ceci est une belle photo",
   },
   {
-    name: "France",
+    name: "Allemagne",
     imageName: "4.jpg",
     comment: "Ceci est une belle photo",
   },
   {
-    name: "France",
+    name: "Angleterre",
     imageName: "4.jpg",
     comment: "Ceci est une belle photo",
   },

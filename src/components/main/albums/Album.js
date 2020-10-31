@@ -1,5 +1,5 @@
 import React from "react";
-import AllAlbums from "./all-albums/AllAlbum";
+import AllAlbums from "./allAlbums/AllAlbum";
 
 function Album() {
   return <AllAlbums />;

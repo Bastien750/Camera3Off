@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./AllAlbum.css";
 import { AlbumData } from "./AllAlbumData";
 import * as AiIcons from "react-icons/ai";
@@ -10,7 +11,7 @@ function Album() {
       <div class="album-contain">
         {AlbumData.map((album, index) => {
           return (
-            <div key={index} className="each-album">
+            <Link to={"/" + album.name} key={index} className="each-album">
               <div
                 className="album-detail"
                 style={{
@@ -29,7 +30,7 @@ function Album() {
                 <br />
                 Voir toutes les photos
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
