@@ -2,15 +2,18 @@ import React from "react";
 
 export const AlbumData = [
   {
-    name: "1.jpg",
+    name: "France",
+    imageName: "4.jpg",
     comment: "Ceci est une belle photo",
   },
   {
-    name: "2.jpg",
+    name: "France",
+    imageName: "4.jpg",
     comment: "Ceci est une belle photo",
   },
   {
-    name: "3.jpg",
+    name: "France",
+    imageName: "4.jpg",
     comment: "Ceci est une belle photo",
   },
 ];

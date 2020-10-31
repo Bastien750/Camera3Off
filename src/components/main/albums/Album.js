@@ -11,8 +11,20 @@ function Album() {
         {AlbumData.map((album, index) => {
           return (
             <div key={index} className="each-album">
-              <img src={"/cover/" + album.name} />
-              <div class="album-detail">
+              <div
+                className="album-detail"
+                style={{
+                  top: 0,
+                  fontSize: "1.8em",
+                  display: "inherit",
+                  marginTop: "40px",
+                  fontWeight: "bold",
+                }}
+              >
+                {album.name.toUpperCase()}
+              </div>
+              <img src={"/cover/" + album.imageName} />
+              <div className="album-detail">
                 <AiIcons.AiOutlineEye />
                 <br />
                 Voir toutes les photos
