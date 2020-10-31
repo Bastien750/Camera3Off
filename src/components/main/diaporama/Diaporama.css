@@ -3,6 +3,7 @@
   /*border: 2px solid red;*/
   height: 90%;
   margin: auto;
+  padding-top: 60px;
   box-sizing: border-box;
 }
 
@@ -35,19 +36,11 @@
 
 .slider-contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .slider {
   opacity: 0.5;
+  margin: 0px 0px 20px 20px;
   font-size: 6rem;
 }
-/*.containerSlide {
-  width: 600px;
-  margin: auto;
-  padding-top: 200px;
-}
-
-.containerSlide img {
-  height: 500px;
-}*/

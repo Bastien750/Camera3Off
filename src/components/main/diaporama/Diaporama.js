@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "./Diaporama.css";
 import { DiaporamaData } from "./DiaporamaData";
-import { Slide } from "react-slideshow-image";
 import { Link } from "react-router-dom";
 import * as AiIcons from "react-icons/ai";
+import * as BsIcons from "react-icons/bs";
 
 function Diaporama() {
   const [id, setId] = useState(0);
-  /*
+  const [temporaryId, setTemporaryId] = useState(id);
+
   useEffect(() => {
-    setInterval(() => {
-      console.log(id);
-      id < 4 ? setId((prevId) => prevId + 1) : setId(0);
-    }, 5000);
-  }, []);
-  */
-  function handleChange(id) {
-    return setId(id);
-  }
+    setTimeout(() => {
+      if (id < DiaporamaData.length - 1) {
+        setId(id + 1);
+      } else {
+        setId(0);
+      }
+    }, 2600);
+  }, [id]);
 
   return (
     <div className="diaporama">
@@ -32,55 +32,20 @@ function Diaporama() {
       />
 
       <div className="slider-contain">
-        <div className="slider" style={id === 0 ? { opacity: 1 } : {}}>
-          <AiIcons.AiOutlineMinus onClick={() => handleChange(0)} />
-        </div>
-        <div className="slider" style={id === 1 ? { opacity: 1 } : {}}>
-          <AiIcons.AiOutlineMinus onClick={() => handleChange(1)} />
-        </div>
-        <div className="slider" style={id === 2 ? { opacity: 1 } : {}}>
-          <AiIcons.AiOutlineMinus onClick={() => handleChange(2)} />
-        </div>
-        <div className="slider" style={id === 3 ? { opacity: 1 } : {}}>
-          <AiIcons.AiOutlineMinus onClick={() => handleChange(3)} />
-        </div>
-        <div className="slider" style={id === 4 ? { opacity: 1 } : {}}>
-          <AiIcons.AiOutlineMinus onClick={() => handleChange(4)} />
-        </div>
+        {DiaporamaData.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="slider"
+              style={id === index ? { opacity: 1 } : {}}
+            >
+              <AiIcons.AiOutlineMinus />
+            </div>
+          );
+        })}
       </div>
-      <Link to={DiaporamaData[id].albumPath}>
-        <span>Appuyez pour voir +</span>
-      </Link>
     </div>
   );
 }
 
-/*
-function Diaporama() {
-  const proprieties = {
-    duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: true,
-    arrows: true,
-  };
-  return (
-    <div className="diaporama">
-      <div className="containerSlide">
-        <Slide {...proprieties}>
-          {DiaporamaData.map((item, index) => {
-            return (
-              <div className="each-slide">
-                <div>
-                  <img src={"/images/" + item.name} alt={item.comment} />
-                </div>
-              </div>
-            );
-          })}
-        </Slide>
-      </div>
-    </div>
-  );
-}
-*/
 export default Diaporama;
