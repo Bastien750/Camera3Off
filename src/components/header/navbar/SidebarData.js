@@ -23,22 +23,22 @@ export const SidebarData = [
     icon: <BsIcons.BsCameraVideo />,
     cName: "nav-text",
   },
-  {
+  /*{
     title: "Blog",
     path: "/blog",
     icon: <BsIcons.BsBook />,
     cName: "nav-text",
-  },
-  {
-    title: "Réseaux sociaux",
-    path: "/scoialmedia",
-    icon: <FiIcons.FiInstagram />,
-    cName: "nav-text",
-  },
+  },*/
   {
     title: "À Propos",
     path: "/aboutus",
     icon: <AiIcons.AiOutlinePlusCircle />,
+    cName: "nav-text",
+  },
+  {
+    title: "Instagram",
+    path: "/scoialmedia",
+    icon: <FiIcons.FiInstagram />,
     cName: "nav-text",
   },
 ];
