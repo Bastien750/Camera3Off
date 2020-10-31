@@ -1,15 +1,16 @@
 .diaporama {
   width: 100%;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   height: 90%;
   margin: auto;
   box-sizing: border-box;
 }
 
-/* .diaporama img {
+.diaporama img {
   object-fit: contain;
   width: 100%;
   height: auto;
+  max-height: 70%;
 }
 
 .diaporama a {
@@ -30,14 +31,23 @@
   justify-content: space-around;
   font-size: 1.3em;
   margin: 20px;
-} */
+}
 
-.containerSlide {
-  width: 90%;
+.slider-contain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slider {
+  opacity: 0.5;
+  font-size: 6rem;
+}
+/*.containerSlide {
+  width: 600px;
   margin: auto;
   padding-top: 200px;
 }
 
 .containerSlide img {
   height: 500px;
-}
+}*/
