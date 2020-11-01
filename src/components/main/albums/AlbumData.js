@@ -10,13 +10,13 @@ export const AlbumData = [
   {
     id: 2,
     name: "Allemagne",
-    imageName: "4.jpg",
+    imageName: "5.jpg",
     comment: "Ceci est une belle photo",
   },
   {
     id: 3,
     name: "Angleterre",
-    imageName: "4.jpg",
+    imageName: "6.jpg",
     comment: "Ceci est une belle photo",
   },
 ];

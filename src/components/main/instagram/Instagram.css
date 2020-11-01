@@ -1,0 +1,20 @@
+.instagram-feedback {
+  margin-bottom: 50px;
+}
+
+.Feed {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Feed img {
+  height: 300px;
+  margin: 30px;
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+}

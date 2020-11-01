@@ -12,13 +12,13 @@ export const AlbumFetchData = {
     {
       id: 2,
       name: "Marseille",
-      imageName: "4.jpg",
+      imageName: "5.jpg",
       comment: "Ceci est une très jolie photo",
     },
     {
       id: 3,
       name: "Marseille",
-      imageName: "4.jpg",
+      imageName: "6.jpg",
       comment: "Ceci est une très jolie photo",
     },
   ],

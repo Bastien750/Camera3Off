@@ -1,0 +1,14 @@
+.video-contain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.each-video h2 {
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.each-video {
+  margin: 40px;
+}

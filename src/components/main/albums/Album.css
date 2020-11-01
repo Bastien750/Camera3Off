@@ -1,4 +1,4 @@
-.main {
+main {
   width: 60vw;
   height: 100vh;
   box-sizing: border-box;
@@ -6,10 +6,9 @@
   margin: auto;
 }
 
-.album h1 {
+main h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 75px;
 }
 
 .album-contain {
@@ -55,4 +54,25 @@
 
 .each-album:hover .album-detail {
   display: inherit;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.each-image {
+  opacity: 0.9;
+}
+
+.each-image:hover {
+  opacity: 1;
+}
+
+.each-image img {
+  height: 200px;
+  width: auto;
+  box-sizing: border-box;
+  border: 2px solid white;
+  margin: 20px;
 }

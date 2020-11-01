@@ -4,9 +4,20 @@ import { ByAlbumData } from "./ByAlbumData";
 
 function ByAlbum() {
   return (
-    <div className="main">
-      <p>Test</p>
-    </div>
+    <main>
+      <div>
+        <h1>{ByAlbumData.name}</h1>
+        <div className="image-container">
+          {ByAlbumData.images.map((item, index) => {
+            return (
+              <div className="each-image">
+                <img src={"/images/" + item.imageName} alt={item.comment} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </main>
   );
 }
 
