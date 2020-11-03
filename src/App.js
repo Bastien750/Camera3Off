@@ -15,13 +15,13 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route name="Home" path="/" exact component={Main} />
           <Route name="Album" path="/album/:id" exact component={AlbumFetch} />
           <Route
             name="ByAlbum"
             path="/album/:id/byalbum/:id"
             component={ByAlbum}
           />
+          <Route name="Home" path="/" component={Main} />
         </Switch>
         <Footer />
       </div>

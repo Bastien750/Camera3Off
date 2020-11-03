@@ -14,7 +14,7 @@ function AlbumFetch() {
       <div>
         <h1>{AlbumFetchData.name}</h1>
         <div className="album">
-          <div className="album-contain">
+          <div className="album-contain" style={{ marginBottom: "70px" }}>
             {AlbumFetchData.byAlbums.map((album, index) => {
               return (
                 <Link

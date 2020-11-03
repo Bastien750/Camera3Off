@@ -7,7 +7,7 @@ import * as AiIcons from "react-icons/ai";
 function Album() {
   return (
     <div className="album">
-      <h1>Albums</h1>
+      <h1 id="albums">Albums</h1>
       <div className="album-contain">
         {AlbumData.map((album, index) => {
           return (
@@ -26,7 +26,7 @@ function Album() {
                   fontWeight: "bold",
                 }}
               >
-                {album.name.toUpperCase()}
+                <span className="album-title">{album.name.toUpperCase()}</span>
               </div>
               <img src={"/cover/" + album.imageName} />
               <div className="album-detail">

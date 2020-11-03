@@ -7,19 +7,19 @@ import * as RiIcons from "react-icons/ri";
 export const SidebarData = [
   {
     title: "Accueil",
-    path: "/",
+    path: "/#top",
     icon: <RiIcons.RiHomeLine />,
     cName: "nav-text",
   },
   {
     title: "Albums",
-    path: "/albums",
+    path: "/#albums",
     icon: <RiIcons.RiCheckboxMultipleBlankLine />,
     cName: "nav-text",
   },
   {
     title: "Vidéos",
-    path: "/videos",
+    path: "/#videos",
     icon: <BsIcons.BsCameraVideo />,
     cName: "nav-text",
   },
@@ -31,13 +31,13 @@ export const SidebarData = [
   },*/
   {
     title: "À Propos",
-    path: "/aboutus",
+    path: "/#aboutus",
     icon: <AiIcons.AiOutlinePlusCircle />,
     cName: "nav-text",
   },
   {
     title: "Instagram",
-    path: "/scoialmedia",
+    path: "/#instagram",
     icon: <FiIcons.FiInstagram />,
     cName: "nav-text",
   },

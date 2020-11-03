@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
-import { Switch, Route } from "react-router-dom";
 import "./Header.css";
 
 function Header() {

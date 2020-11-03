@@ -12,3 +12,19 @@ footer {
   margin: 10px;
   font-weight: lighter;
 }
+
+@media only screen and (max-device-width: 1440px) {
+  footer {
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .credit {
+    margin: auto;
+  }
+}

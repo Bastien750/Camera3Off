@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Diaporama.css";
 import { DiaporamaData } from "./DiaporamaData";
-import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 
 function Diaporama() {
   const [id, setId] = useState(0);
-  const [temporaryId, setTemporaryId] = useState(id);
 
   useEffect(() => {
     setTimeout(() => {

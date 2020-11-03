@@ -18,3 +18,15 @@
   justify-content: center;
   font-size: 1.3em;
 }
+
+@media only screen and (max-device-width: 1200px) {
+  .Feed img {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-device-width: 880px) {
+  .Feed img {
+    height: 180px;
+  }
+}

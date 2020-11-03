@@ -5,3 +5,9 @@ main {
   /*border: 2px solid green;*/
   margin: auto;
 }
+
+@media only screen and (max-device-width: 1100px) {
+  main {
+    width: 95vh;
+  }
+}

@@ -13,7 +13,9 @@ function Footer() {
           <p>Developped by Bastien Lasorne</p>
         </div>
       </div>
-      <p style={{ fontWeight: "medium" }}>{date}</p>
+      <p style={{ fontWeight: "medium" }} className="date">
+        {date}
+      </p>
     </footer>
   );
 }

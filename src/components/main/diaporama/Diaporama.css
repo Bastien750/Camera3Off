@@ -44,3 +44,9 @@
   margin: 0px 0px 20px 20px;
   font-size: 3rem;
 }
+
+@media only screen and (max-device-width: 450px) {
+  .diaporama img {
+    max-height: 80%;
+  }
+}

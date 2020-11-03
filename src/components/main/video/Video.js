@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { VideoData } from "./VideoData";
 import "./Video.css";
 
 function Video() {
+  const [limit, setLimit] = useState(2);
+
   return (
     <div className="video">
-      <h1>Vidéos</h1>
+      <h1 id="videos">Vidéos</h1>
       <div className="video-contain">
         {VideoData.map((video, index) => {
-          return (
-            <div key={index} className="each-video">
-              <h2>{video.title}</h2>
-              <iframe
-                width="426"
-                height="240"
-                src={"https://www.youtube.com/embed/" + video.url}
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen="allowfullscreen"
-                mozallowfullscreen="mozallowfullscreen"
-                msallowfullscreen="msallowfullscreen"
-                oallowfullscreen="oallowfullscreen"
-                webkitallowfullscreen="webkitallowfullscreen"
-              ></iframe>
-            </div>
-          );
+          if (index < limit) {
+            return (
+              <div key={index} className="each-video">
+                <h2>{video.title}</h2>
+                <iframe
+                  width="426"
+                  height="240"
+                  src={"https://www.youtube.com/embed/" + video.url}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen="allowfullscreen"
+                  mozallowfullscreen="mozallowfullscreen"
+                  msallowfullscreen="msallowfullscreen"
+                  oallowfullscreen="oallowfullscreen"
+                  webkitallowfullscreen="webkitallowfullscreen"
+                ></iframe>
+              </div>
+            );
+          }
         })}
       </div>
+      <p onClick={() => setLimit(limit + 2)} className="view-more">
+        Voir +
+      </p>
     </div>
   );
 }

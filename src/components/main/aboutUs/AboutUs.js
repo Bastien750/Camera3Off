@@ -1,11 +1,10 @@
 import React from "react";
 import "./AboutUs.css";
-import { AboutUsData } from "./AboutUsData";
 
 function AboutUs() {
   return (
     <div className="about-us">
-      <h1>À propos</h1>
+      <h1 id="aboutus">À propos</h1>
       <p>
         Étape importante et à ne pas négliger, nous avons décidé de dédier un
         espace du site à un onglet « À Propos », afin d’en savoir un peu plus
