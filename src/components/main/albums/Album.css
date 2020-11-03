@@ -119,6 +119,10 @@ main h1 {
     border-radius: 20px;
   }
 
+  .each-album:hover {
+    border: none;
+  }
+
   .album-detail {
     display: none;
     position: static;

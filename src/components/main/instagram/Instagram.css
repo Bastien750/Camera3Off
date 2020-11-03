@@ -25,3 +25,9 @@
     height: 180px;
   }
 }
+
+@media only screen and (max-device-width: 600px) {
+  .Feed img {
+    height: 120px;
+  }
+}
