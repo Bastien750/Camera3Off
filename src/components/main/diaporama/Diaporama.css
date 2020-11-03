@@ -5,6 +5,9 @@
   margin: auto;
   padding-top: 60px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .diaporama img {
@@ -28,8 +31,6 @@
 }
 
 .decoration {
-  display: flex;
-  justify-content: space-around;
   font-size: 1.3em;
   margin: 20px;
 }
@@ -46,8 +47,8 @@
   z-index: -1;
 }
 
-@media only screen and (max-device-width: 450px) {
-  .diaporama img {
-    max-height: 80%;
+@media only screen and (max-device-width: 600px) {
+  .slider {
+    font-size: 2rem;
   }
 }

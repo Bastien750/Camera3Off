@@ -3,6 +3,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  position: absolute;
 }
 
 .menu-bars {
@@ -22,11 +23,16 @@
   top: 0;
   left: -100%;
   transition: 750ms;
+  z-index: 2;
 }
 
 .nav-menu.active {
   left: 0;
   transition: 500ms;
+}
+
+.nav-menu-items {
+  z-index: 2;
 }
 
 .nav-text {

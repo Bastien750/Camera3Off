@@ -6,5 +6,6 @@
 @media only screen and (max-device-width: 660px) {
   .about-us p {
     margin: 10px 0px 0px 10px;
+    font-size: 1.1em;
   }
 }

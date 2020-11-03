@@ -15,8 +15,6 @@ function Video() {
               <div key={index} className="each-video">
                 <h2>{video.title}</h2>
                 <iframe
-                  width="426"
-                  height="240"
                   src={"https://www.youtube.com/embed/" + video.url}
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

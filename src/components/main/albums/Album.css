@@ -4,6 +4,7 @@ main h1 {
 }
 
 .album-contain {
+  z-index: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -59,6 +60,7 @@ main h1 {
 
 .each-image {
   opacity: 0.9;
+  display: contents;
 }
 
 .each-image:hover {
@@ -101,11 +103,30 @@ main h1 {
 @media only screen and (max-device-width: 1250px) {
   .each-album {
     width: 200px;
-    z-index: -1;
   }
 
   .album-title {
     font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-device-width: 1100px) {
+  .each-album {
+    position: static;
+  }
+
+  .each-album img {
+    border-radius: 20px;
+  }
+
+  .album-detail {
+    display: none;
+    position: static;
+  }
+
+  .album-title {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -122,5 +143,11 @@ main h1 {
 
   .album-title {
     font-size: 1em;
+  }
+}
+
+@media only screen and (max-device-width: 550px) {
+  .album-title {
+    font-size: 0.8em;
   }
 }

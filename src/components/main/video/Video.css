@@ -4,6 +4,8 @@
   flex-wrap: wrap;
 }
 .each-video h2 {
+  position: relative;
+  z-index: -1;
   display: flex;
   justify-content: center;
   opacity: 0.8;
@@ -13,10 +15,29 @@
   margin: 40px 40px 0px 40px;
 }
 
+.each-video iframe {
+  width: 426px;
+  height: 240px;
+}
+
 .view-more {
   display: flex;
   justify-content: center;
-  font-size: 2.5em;
   margin-bottom: 40px;
   font-weight: bold;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .each-video h2 {
+    font-size: 1.2em;
+  }
+
+  .each-video iframe {
+    width: 256px;
+    height: 144px;
+  }
+
+  .view-more p {
+    font-size: 1em;
+  }
 }

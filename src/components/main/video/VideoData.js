@@ -3,7 +3,7 @@ import React from "react";
 export const VideoData = [
   {
     id: 1,
-    title: "Troisièeme Vidéo",
+    title: "Troisième Vidéo",
     url: "OsKQw3qTMMk",
     dateOfParution: "01-02-2020",
   },

@@ -1,3 +1,11 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
