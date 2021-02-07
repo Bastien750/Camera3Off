@@ -28,6 +28,10 @@
 }
 
 @media only screen and (max-device-width: 600px) {
+  .each-video {
+    margin: 0px 0px 0px;
+  }
+
   .each-video h2 {
     font-size: 1.2em;
   }
