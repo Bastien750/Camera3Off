@@ -28,7 +28,7 @@ function Album() {
               >
                 <span className="album-title">{album.name.toUpperCase()}</span>
               </div>
-              <img src={"/cover/" + album.imageName} />
+              <img src={"/cover/" + album.imageName} alt={album.comment} />
               <div className="album-detail">
                 <AiIcons.AiOutlineEye />
                 <br />

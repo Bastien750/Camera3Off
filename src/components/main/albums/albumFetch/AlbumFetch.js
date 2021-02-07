@@ -34,7 +34,7 @@ function AlbumFetch() {
                   >
                     {album.name.toUpperCase()}
                   </div>
-                  <img src={"/cover/" + album.imageName} />
+                  <img src={"/cover/" + album.imageName} alt={album.comment} />
                   <div className="album-detail">
                     <AiIcons.AiOutlineEye />
                     <br />

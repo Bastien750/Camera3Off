@@ -18,7 +18,7 @@ function ByAlbum() {
   function handleImage(id) {
     if (id <= ByAlbumData.images.length && id > 0) {
       setId(id);
-    } else if (id == 0) {
+    } else if (id === 0) {
       setId(ByAlbumData.images.length);
     } else {
       setId(1);

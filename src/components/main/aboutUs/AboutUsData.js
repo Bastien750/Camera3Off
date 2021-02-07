@@ -1,5 +1,3 @@
-import React from "react";
-
 export const AboutUsData = {
   id: 1,
   text:

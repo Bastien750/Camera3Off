@@ -44,6 +44,7 @@ function AboutUs() {
           href="https://www.instagram.com/camera3offp/"
           target="_blank"
           style={{ color: "white" }}
+          rel="noreferrer"
         >
           ici
         </a>
