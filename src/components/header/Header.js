@@ -7,7 +7,7 @@ function Header() {
     <header>
       <div className="header">
         <Navbar />
-        <h2>Camera3Off</h2>
+        <h2>C3F</h2>
       </div>
     </header>
   );
