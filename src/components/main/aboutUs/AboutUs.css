@@ -1,6 +1,7 @@
 .about-us p {
   font-size: 1.3em;
   margin-bottom: 30px;
+  padding-bottom: 90px; /* Just until Instagram doesn't work */
 }
 
 @media only screen and (max-device-width: 660px) {

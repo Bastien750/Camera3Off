@@ -13,7 +13,7 @@ function Main() {
       <Album />
       <Video />
       <AboutUs />
-      <Instagram />
+      {/* <Instagram /> */}
     </main>
   );
 }
