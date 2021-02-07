@@ -35,10 +35,10 @@ export const SidebarData = [
     icon: <AiIcons.AiOutlinePlusCircle />,
     cName: "nav-text",
   },
-  {
-    title: "Instagram",
-    path: "/#instagram",
-    icon: <FiIcons.FiInstagram />,
-    cName: "nav-text",
-  },
+  // {
+  //   title: "Instagram",
+  //   path: "/#instagram",
+  //   icon: <FiIcons.FiInstagram />,
+  //   cName: "nav-text",
+  // },
 ];
