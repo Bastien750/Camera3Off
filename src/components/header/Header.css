@@ -15,6 +15,14 @@
   font-size: 1.9em;
 }
 
+.home-link {
+  color: white;
+}
+
+.home-link:onclick {
+  color: white;
+}
+
 @media only screen and (max-device-width: 1100px) {
   .header {
     padding: 25px 0px 25px 0px;
