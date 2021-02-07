@@ -8,7 +8,7 @@ function Instagram() {
       <h1 id="instagram">Instagram</h1>
       <div className="post-container">
         <Feed
-          userName="maes_packm"
+          userName="camera3offp"
           className="Feed"
           classNameLoading="Loading"
           limit="9"
