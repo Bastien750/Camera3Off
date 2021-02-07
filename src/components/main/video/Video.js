@@ -27,6 +27,8 @@ function Video() {
                 ></iframe>
               </div>
             );
+          } else {
+            return <></>;
           }
         })}
       </div>
