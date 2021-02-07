@@ -23,6 +23,7 @@ function Video() {
                   msallowfullscreen="msallowfullscreen"
                   oallowfullscreen="oallowfullscreen"
                   webkitallowfullscreen="webkitallowfullscreen"
+                  title={video.title}
                 ></iframe>
               </div>
             );
