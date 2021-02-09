@@ -28,3 +28,9 @@ footer {
     margin: auto;
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  .credit div p {
+    margin: 15px 0;
+  }
+}
