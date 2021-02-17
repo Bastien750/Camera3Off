@@ -32,9 +32,13 @@ function Video() {
           }
         })}
       </div>
-      {/* <p onClick={() => setLimit(limit + 2)} className="view-more">
+      <p
+        onClick={() => setLimit(limit + 2)}
+        className="view-more"
+        style={{ display: "none" }} // Delete the style when we get more than 2 vidéos
+      >
         Voir +
-      </p> */}
+      </p>
     </div>
   );
 }
