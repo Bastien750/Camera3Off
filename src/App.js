@@ -16,10 +16,15 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route name="Album" path="/album/:id" exact component={AlbumFetch} />
+          <Route
+            name="Album"
+            path="/album/:albumId"
+            exact
+            component={AlbumFetch}
+          />
           <Route
             name="ByAlbum"
-            path="/album/:id/byalbum/:id"
+            path="/album/:albumId/byalbum/:byAlbumId"
             component={ByAlbum}
           />
           <Route name="Home" path="/" component={Main} />

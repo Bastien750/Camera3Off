@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "../../Album.css";
-import { ByAlbumData } from "./ByAlbumData";
+import { AlbumData } from "../../AlbumData";
 import * as IoIcons from "react-icons/io";
 import OutsideClickHandler from "react-outside-click-handler";
 
-function ByAlbum() {
+function ByAlbum(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const { albumId, byAlbumId } = props.match.params;
+
+  const album = AlbumData.find(({ id }) => id.toString() === albumId);
+
+  const data = album.byAlbums.find(({ id }) => id.toString() === byAlbumId);
 
   const [id, setId] = useState(1);
 
@@ -16,10 +22,10 @@ function ByAlbum() {
   const [defaultStyle, setDefaultStyle] = useState(true);
 
   function handleImage(id) {
-    if (id <= ByAlbumData.images.length && id > 0) {
+    if (id <= data.images.length && id > 0) {
       setId(id);
     } else if (id === 0) {
-      setId(ByAlbumData.images.length);
+      setId(data.images.length);
     } else {
       setId(1);
     }
@@ -35,12 +41,12 @@ function ByAlbum() {
   return (
     <main>
       <div style={{ marginBottom: "70px" }}>
-        <h1>{ByAlbumData.name}</h1>
+        <h1>{data.name}</h1>
         <div
           className="image-container"
           style={{ opacity: defaultStyle ? "1" : "0.3" }}
         >
-          {ByAlbumData.images.map((item, index) => {
+          {data.images.map((item, index) => {
             return (
               <div key={index} className="each-image">
                 <img
@@ -60,8 +66,8 @@ function ByAlbum() {
             >
               <IoIcons.IoIosArrowBack onClick={() => handleImage(id - 1)} />
               <img
-                src={"/images/" + ByAlbumData.images[id - 1].imageName}
-                alt={ByAlbumData.images[id - 1].comment}
+                src={"/images/" + data.images[id - 1].imageName}
+                alt={data.images[id - 1].comment}
               />
               <IoIcons.IoIosArrowForward onClick={() => handleImage(id + 1)} />
             </div>
