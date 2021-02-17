@@ -32,9 +32,9 @@ function Video() {
           }
         })}
       </div>
-      <p onClick={() => setLimit(limit + 2)} className="view-more">
+      {/* <p onClick={() => setLimit(limit + 2)} className="view-more">
         Voir +
-      </p>
+      </p> */}
     </div>
   );
 }
