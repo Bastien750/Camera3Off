@@ -1,20 +1,20 @@
 export const VideoData = [
-  {
-    id: 1,
-    title: "Troisième Vidéo",
-    url: "OsKQw3qTMMk",
-    dateOfParution: "01-02-2020",
-  },
+  // {
+  //   id: 1,
+  //   title: "Troisième Vidéo",
+  //   url: "OsKQw3qTMMk",
+  //   dateOfParution: "01-02-2020",
+  // },
   {
     id: 2,
-    title: "Deuxième Vidéo",
-    url: "OsKQw3qTMMk",
-    dateOfParution: "01-02-2020",
+    title: "Shoot Photo Fumigènes",
+    url: "ChUv36cJQn4",
+    dateOfParution: "17-02-2021",
   },
   {
     id: 3,
-    title: "Première vidéo",
-    url: "OsKQw3qTMMk",
-    dateOfParution: "01-02-2020",
+    title: "Saut en parachute",
+    url: "X1-PSSCuuN8",
+    dateOfParution: "17-02-2021",
   },
 ];

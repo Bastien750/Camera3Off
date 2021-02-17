@@ -95,12 +95,12 @@ export const AlbumData = [
             imageName: "P1040765-min.jpg",
             comment: "Tour Eiffel lever du soleil",
           },
-          {
-            id: 15,
-            name: "France",
-            imageName: "P1040765-min.jpg",
-            comment: "Tour Eiffel lever du soleil",
-          },
+          // {
+          //   id: 15,
+          //   name: "France",
+          //   imageName: "P1040765-min.jpg",
+          //   comment: "Tour Eiffel lever du soleil",
+          // },
           {
             id: 16,
             name: "France",
