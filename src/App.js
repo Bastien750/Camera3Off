@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga"; //Google Analytics
 import "./App.css";
 import "./components/main/Main.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -11,6 +12,10 @@ import ByAlbum from "./components/main/albums/albumFetch/byAlbum/ByAlbum";
 import Footer from "./components/footer/Footer";
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("G-ZT22JRMMLS");
+    ReactGA.pageview(window.location.pathname);
+  });
   return (
     <Router>
       <div>
