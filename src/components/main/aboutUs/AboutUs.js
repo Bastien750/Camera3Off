@@ -32,7 +32,16 @@ function AboutUs() {
         <br />
         Nous avons bien évidemment conscience que ce site pourrait en permanence
         être amélioré, c’est pourquoi nous vous suggérons de laisser un avis,
-        une critique ou un conseil en cliquant ici.
+        une critique ou un conseil en cliquant{" "}
+        <a
+          href="mailto:camera3off@gmail.com"
+          target="_blank"
+          style={{ color: "white" }}
+          rel="noreferrer"
+        >
+          ici
+        </a>
+        .
         <br />
         <br />
         Ce site internet a pour but de diffuser notre travail personnel, celui
